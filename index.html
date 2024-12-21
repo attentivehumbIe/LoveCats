@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест для Хади</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="welcome">
+      <h1>Привет, Хади!</h1>
+      <p>Давай сыграем в маленькую игру ❤️</p>
+    </header>
+
+    <main>
+      <div id="quiz">
+        <!-- Вопрос 1 -->
+        <div class="question" id="question-1">
+          <p>Где тут Менди?</p>
+          <div class="options">
+            <img src="https://media.discordapp.net/attachments/1111512895095285800/1111514133202697238/mandy.jpg" onclick="checkAnswer(this, true)">
+            <img src="https://www.brawlstarsguide.com/wp-content/uploads/2020/09/shelly.jpg" onclick="checkAnswer(this, false)">
+            <img src="https://www.brawlstarsguide.com/wp-content/uploads/2020/09/colt.jpg" onclick="checkAnswer(this, false)">
+            <img src="https://www.brawlstarsguide.com/wp-content/uploads/2020/09/nita.jpg" onclick="checkAnswer(this, false)">
+          </div>
+        </div>
+
+        <!-- Вопрос 2 -->
+        <div class="question" id="question-2">
+          <p>Где тут котик?</p>
+          <div class="options">
+            <img src="https://placekitten.com/200/300" onclick="checkAnswer(this, true)">
+            <img src="https://placedog.net/200/300" onclick="checkAnswer(this, false)">
+            <img src="https://images.pexels.com/photos/4587994/pexels-photo-4587994.jpeg" onclick="checkAnswer(this, false)">
+            <img src="https://images.pexels.com/photos/302809/pexels-photo-302809.jpeg" onclick="checkAnswer(this, false)">
+          </div>
+        </div>
+
+        <!-- Вопрос 3 -->
+        <div class="question" id="question-3">
+          <p>Где тут Майот?</p>
+          <div class="options">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Mayot_2022.jpg/800px-Mayot_2022.jpg" onclick="checkAnswer(this, true)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gims_2019.jpg/800px-Gims_2019.jpg" onclick="checkAnswer(this, false)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Jul_2018.jpg/800px-Jul_2018.jpg" onclick="checkAnswer(this, false)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Kaaris_2020.jpg/800px-Kaaris_2020.jpg" onclick="checkAnswer(this, false)">
+          </div>
+        </div>
+
+        <!-- Вопрос 4 -->
+        <div class="question" id="question-4">
+          <p>Где тут волейбол?</p>
+          <div class="options">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Volleyball_-_cropped.jpg" onclick="checkAnswer(this, true)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Football_player.jpg/800px-Football_player.jpg" onclick="checkAnswer(this, false)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Basketball.jpg/800px-Basketball.jpg" onclick="checkAnswer(this, false)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Table_Tennis_Players_%28cropped%29.jpg/800px-Table_Tennis_Players_%28cropped%29.jpg" onclick="checkAnswer(this, false)">
+          </div>
+        </div>
+
+        <div id="result" style="display:none;">
+          <p class="final-text">Вот эти все правильные ответы ассоциируются у меня с тобой. Мне нравятся твои вкусы, и я уважаю их, как и тебя саму. Люблю тебя, котёночек мой ❤️</p>
+          <div class="final-images">
+            <img src="https://media.discordapp.net/attachments/1111512895095285800/1111514133202697238/mandy.jpg">
+            <img src="https://placekitten.com/200/300">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Mayot_2022.jpg/800px-Mayot_2022.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Volleyball_-_cropped.jpg">
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
